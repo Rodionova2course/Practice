@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Georama', sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #2C145F;
+}
+/*стили меню*/
+header {
+  background-color: #231F1E;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+  height: 120px;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  max-width: 400px;
+}
+.menu {
+  flex-basis: 55%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.menu-background {
+  background-color: #231F1E;
+  height: 120px;
+}
+.background-gradient-one {
+  background: linear-gradient(#231F1E, #16145F);
+  height: 120px;
+}
+/*стили основного контента*/
+main {
+  background: linear-gradient(#16145F, #684FB0);
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+  background-color: #DEE7F4;
+  border-radius: 40px;
+  padding: 40px;
+}
+.photo {
+  max-width: 700px;
+  max-height: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.photo-margin {
+  margin-top: 40px;
+}
+.text {
+  margin: 0;
+  margin-top: 40px;
+}
+.info {
+  margin-bottom: 60px;
+}
+.vacancies-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+.vacancies-block{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vacancies-text {
+  margin: 0;
+  max-width: 540px;
+}
+.vacancies-photo{
+  max-width: 600px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.vacancies-buttons {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.button {
+  display: block;
+  margin-top: 40px;
+  background: linear-gradient(#355CE4, #392E7A);
+  box-shadow: 4px 4px 0px #392E7A;
+  border-radius: 20px;
+  border: none;
+  font-size: 28px;
+  color: white;
+  padding: 21px 30px;
+}
+.button:hover {
+  background: linear-gradient(#2c46a3, #392E7A);
+}
+.text-vacancies {
+  text-align: center;
+  font-size: 48px;
+}
+.vacancies-button {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+.background-gradient-two {
+  background: linear-gradient(#684FB0, #231F1E);
+  height: 120px;
+}
+/*контакты*/
+footer {
+  background-color: #231F1E;
+  margin: auto;
+
+  padding: 25px 70px;
+  color: white;
+}
+.content-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+}
+.footer-text {
+  margin: 0;
+}
+.footer-link {
+  display: inline-block;
+  margin-top: 20px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-block {
+  width: 30%;
+}
+/*Адаптивная верстка*/
+@media(max-width: 1220px) {
+  .photo {
+    max-width: 70%;
+  }
+  .vacancies-photo, .vacancies-text {
+    max-width: 47%;
+  }
+  .logo {
+    max-width: 40%;
+  }
+  .menu {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 920px) {
+  .vacancies-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button {
+    margin: 20px;
+  }
+  .vacancies-button {
+    margin: auto;
+    margin-top: 40px;
+  }
+  .vacancies-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vacancies-photo, .vacancies-text {
+    max-width: 100%;
+    margin: auto;
+  }
+  .vacancies-photo {
+    margin-top: 40px;
+  }
+  body {
+    font-size: 24px;
+  }
+  .vacancies-title, .text-vacancies {
+    font-size: 40px;
+  }
+  .reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media(max-width: 760px){
+  .menu {
+    flex-basis: 58%;
+    font-size: 20px;
+  }
+  .contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-block {
+    flex-basis: 40%;
+    margin: 20px;
+  }
+}
+@media(max-width: 580px){
+  body {
+    font-size: 20px;
+  }
+  .vacancies-title, .text-vacancies {
+    font-size: 36px;
+  }
+  .contact-block {
+    flex-basis: 100%;
+  }
+  .content-block {
+    max-width: 100%;
+  }
+  header {
+    padding: 25px 40px;
+  }
+  .menu {
+    flex-basis: 59%;
+    font-size: 16px;
+  }
+}
